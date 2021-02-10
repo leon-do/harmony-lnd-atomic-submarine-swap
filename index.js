@@ -34,8 +34,9 @@ app.use(express.json()).post("/", async (req, res) => {
   });
 
   // refund if order ln isn't paid
-  setTimeout(() => {
-    harmony.refund(hash);
+  setTimeout(async () => {
+    const { transactionHash } = harmony.refund(hash);
+    console.log("Refund: " + transactionHash);
   }, 1000 * 60 * 60 * 20);
 });
 
@@ -44,7 +45,7 @@ lnService.subscribeToInvoices({ lnd }).on("invoice_updated", async (invoice) => 
     // doing client a favor and unlocking contract
     const { secret } = invoice;
     const { transactionHash } = await harmony.withdraw("0x" + secret);
-    console.log(transactionHash);
+    console.log("Withdraw: " + transactionHash);
   }
 });
 
