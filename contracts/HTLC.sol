@@ -69,6 +69,7 @@ contract HTLC {
         // delete from mapping
         delete order[_hash];
 
+        // send
         fromAddress.transfer(value);
     }
 }
