@@ -44,6 +44,6 @@
 
 ![](https://user-images.githubusercontent.com/19412160/107597469-b64cc000-6be8-11eb-88d7-49f74d630908.png)
 
-## On-chain balance should be zero
+## Order is complete
 
 ![](https://user-images.githubusercontent.com/19412160/107597513-d67c7f00-6be8-11eb-8d9a-c7787305e773.png)
