@@ -65,6 +65,9 @@ contract HTLC {
 
         address payable fromAddress = order[_hash].fromAddress;
         uint256 value = order[_hash].value;
+        
+        // delete from mapping
+        delete order[_hash];
 
         fromAddress.transfer(value);
     }
