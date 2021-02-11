@@ -1,5 +1,7 @@
 # Submarine Swaps Between BTC Lightning and Harmony ONE
 
+![](https://user-images.githubusercontent.com/19412160/107598894-0463c280-6bed-11eb-80f1-a35b18d6d435.png)
+
 <a href="https://www.youtube.com/watch?v=3ZFBG7Z2puU">
 <img src="https://user-images.githubusercontent.com/19412160/107597893-142dd780-6bea-11eb-87cc-04c64ed9d9f6.png"/>
 </a>
