@@ -8,15 +8,21 @@
 
 ## Install lnd and btcd
 
-`btcd --testnet --rpcuser=REPLACEME --rpcpass=REPLACEME`
+```
+btcd --testnet --rpcuser=REPLACEME --rpcpass=REPLACEME
+```
 
 ```
 lnd --bitcoin.active --bitcoin.testnet --debuglevel=debug --btcd.rpcuser=REPLACEME --btcd.rpcpass=REPLACEME --rpclisten=0.0.0.0:10009
 ```
 
-`lncli -n testnet create`
+```
+lncli -n testnet create
+```
 
-`lncli -n testnet unlock`
+```
+lncli -n testnet unlock
+```
 
 ## Open channel
 
