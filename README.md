@@ -26,7 +26,9 @@ lncli -n testnet unlock
 
 ## Open channel
 
-`031c612cd69fa72af27ad7dfdb19e41e6afd0fb2645a04df286fe5fcca4e901833@161.35.99.8:9735`
+```
+031c612cd69fa72af27ad7dfdb19e41e6afd0fb2645a04df286fe5fcca4e901833@161.35.99.8:9735
+```
 
 ## Request swap
 
