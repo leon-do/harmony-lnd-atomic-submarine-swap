@@ -2,6 +2,7 @@ const config = require("./config");
 const express = require("express");
 const app = express();
 const lnService = require("ln-service");
+const BN = require("bn.js");
 const harmony = require("./harmony");
 
 // connect to lnd
@@ -17,11 +18,11 @@ app.use(express.json()).post("/", async (req, res) => {
   // create bitcoin invoice
   const invoice = await lnService.createInvoice({
     lnd,
-    tokens: (bitcoin * 100000000).toString(), // 1 btc = 100000000 satoshis
+    tokens: new BN(bitcoin * 1e8).toString(), // 1 btc = 100000000 satoshis
   });
 
-  // 1 BTC == 321 ONE
-  const oneToken = bitcoin * 321;
+  // 1 BTC == 4500000 ONE
+  const oneToken = bitcoin * 4500000;
 
   // create harmony order using the same hash from the bitcoin invoice
   const hash = "0x" + invoice.id;

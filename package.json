@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bn.js": "^5.1.3",
-    "express": "^4.17.1",
-    "ln-service": "^50.11.11",
-    "web3": "^1.3.4"
+    "bn.js": "5.1.3",
+    "express": "4.17.1",
+    "ln-service": "50.11.11",
+    "web3": "1.3.4"
   }
 }
