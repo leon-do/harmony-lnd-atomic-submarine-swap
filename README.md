@@ -10,7 +10,9 @@
 
 `btcd --testnet --rpcuser=REPLACEME --rpcpass=REPLACEME`
 
-`lnd --bitcoin.active --bitcoin.testnet --debuglevel=debug --btcd.rpcuser=REPLACEME --btcd.rpcpass=REPLACEME --rpclisten=0.0.0.0:10009`
+```
+lnd --bitcoin.active --bitcoin.testnet --debuglevel=debug --btcd.rpcuser=REPLACEME --btcd.rpcpass=REPLACEME --rpclisten=0.0.0.0:10009
+```
 
 `lncli -n testnet create`
 
@@ -21,6 +23,10 @@
 `031c612cd69fa72af27ad7dfdb19e41e6afd0fb2645a04df286fe5fcca4e901833@161.35.99.8:9735`
 
 ## Request swap
+
+```
+curl -X POST 161.35.99.8 -H 'Content-Type: application/json' -d '{"bitcoin": 0.0000001, "toAddress": "0x2aea4cdcff022896c1b9c4a2a224eee7936e8b85"}'
+```
 
 ![](https://user-images.githubusercontent.com/19412160/107597088-a1bbf800-6be7-11eb-959d-6ac862a6fe4d.png)
 
