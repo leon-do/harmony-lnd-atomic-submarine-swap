@@ -1,9 +1,9 @@
 module.exports = {
   url: "https://api.s0.b.hmny.io", // mainnet: https://api.s0.t.hmny.io
   privateKey: "", // harmony priv key
-  contractAddress: "", // harmony contract address
-  cert: "", 
-  macaroon: "==",
+  contractAddress: "0xFAa2b2AE3Eb4367275c1607F74e32b402cF202cf", // harmony contract address
+  cert: "", // https://github.com/alexbosworth/ln-service#using-grpc 
+  macaroon: "", // https://github.com/alexbosworth/ln-service#using-grpc
   socket: "127.0.0.1:10009", // ln socket
   abi: [
     {
